@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Re Motors - Home</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar__image">
-                <img src="" alt="Main logo" class="navbar__image-element" />
-        </div>
-        <ul>
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./product.html">Product</a>
-            </li>
-            <li>
-                <a href="./order.html">Order</a>
-            </li>
-        </ul>
-
-    </nav>
-
     <header>
-
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="" alt="Main logo" class="navbar__logo-image" />
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="./index.html" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="./product.html" class="navbar__link">Photos</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="./order.html" class="navbar__link">Buy</a>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
 
-    <main>
-        <section>
 
+    <main>
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__title hero__title--large">EivReza Motors</h1>
+                <h2 class="hero__subtitle hero__subtitle--medium">EivReza Velocity</h2>
+                <p class="hero__price">5,000,000 kr</p>
+                <p class="hero__description">Introducing the all-new RE-Motors Velocity: a sleek, compact SUV that blends comfort, performance, and style for every journey. With a spacious interior designed for relaxation and advanced tech features for effortless connectivity, the Horizon makes every drive an enjoyable experience.</p>
+                <a href="#" class="hero__button">Buy Now</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-
+    <!-- Page footer including the links and copyright  -->
+    <footer class="footer">
+        <p class="footer__paragraph">&copy; EivReza-Motors</p>
+        <p class="footer__paragraph">Rosenkranzgrate 20, 0160, Oslo</p>
     </footer>
 </body>
+
 </html>

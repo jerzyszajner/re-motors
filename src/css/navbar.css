@@ -1,0 +1,29 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding: 2rem;
+    background-color: var(--blue-500);
+}
+.navbar__logo-image {
+
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar__menu-item {
+
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--white);
+}

@@ -1,0 +1,31 @@
+:root {
+	/* --FONT- */
+	--font-family: 'Raleway', sans-serif;
+	/* --WHITE-- */
+	--white: #FDFDFD;
+	--gray: #EAEBEB;
+	/* --BLACK-- */
+	--black: #1C1C1C;
+	/* --BLUES-- */
+	--blue-50: #EAEBEB;
+	--blue-100: #BDC0C2;
+	--blue-200: #9DA2A4;
+	--blue-300: #70777A;
+	--blue-400: #555D61;
+	--blue-500: #2A3439;
+	--blue-600: #262F34;
+	--blue-700: #1E2528;
+	--blue-800: #171D1F;
+	--blue-900: #121618;
+	/* --YELLOWS-- */
+	--yellow-50: #FEF6EC;
+	--yellow-100: #FBE2C3;
+	--yellow-200: #F9D4A6;
+	--yellow-300: #F7C07D;
+	--yellow-400: #F5B464;
+	--yellow-500: #F3A13D;
+	--yellow-600: #DD9338;
+	--yellow-700: #AD722B;
+	--yellow-800: #865922;
+	--yellow-900: #66441A;
+}
