@@ -3,4 +3,10 @@ body {
     width: 100%;
     font-family: "Roboto Regular", sans-serif;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }

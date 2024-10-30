@@ -6,12 +6,86 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/order.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/order.css" />
     <title>Re Motors - Order</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="./assets/icons/logo.png" alt="Main logo" class="navbar__logo-image" />
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="./index.html" class="navbar__link">Home</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="./product.html" class="navbar__link">Photos</a>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="./order.html" class="navbar__link">Buy</a>
+                </li>
+            </ul>
+        </nav>    
+        <div class="product__title">
+            <h1 class="product__title--header">EivReza Velocity</h1>
+            <p class="product__title--description">Comfort in Every Mile, Fun in Every Turn</p>
+        </div>
+    </header>
+    <main>
+        <div class="product__container">
+            <div class="Product__selection">
+                <p>Custimize your dream car</p>
+                <form class="product__selection-dropdown">
+                    <label for="dropdown1"></label>
+                    <select id="dropdown1">
+                        <option value="" disabled selected>Select type</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                    </select>
+                    <label for="dropdown2"></label>
+                    <select id="dropdown2">
+                        <option value="" disabled selected>Select engine</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                    </select>
+                    <label for="dropdown3"></label>
+                    <select id="dropdown3">
+                        <option value="" disabled selected>Select transmission</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                    </select>
+                    <label for="dropdown4"></label>
+                    <select id="dropdown4">
+                        <option value="" disabled selected>Select color</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                    </select>
+                    <label for="dropdown5"></label>
+                    <select id="dropdown5">
+                        <option value="" disabled selected>Select interior</option>
+                        <option value="item1">Item 1</option>
+                        <option value="item2">Item 2</option>
+                        <option value="item3">Item 3</option>
+                    </select>
+                    <br><br>
+                    <button type="button">Submit</button>
+                </form>
+            </div>
+            <div class="Product__image">
+                <img src="./assets/images/car/bil-4.png" alt="">
+            </div>
+        </div>
+    </main>
+            <!-- Page footer including the links and copyright  -->
+            <footer class="footer">
+                <p class="footer__paragraph">&copy; EivReza-Motors</p>
+                <p class="footer__paragraph">Rosenkranzgrate 20, 0160, Oslo</p>
+            </footer>
 </body>
 </html>

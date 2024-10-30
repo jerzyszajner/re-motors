@@ -1,7 +1,14 @@
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
+    flex-grow: 1;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
