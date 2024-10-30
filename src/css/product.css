@@ -5,8 +5,8 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    gap: var(--spacing-small);
-    margin-bottom: var(--spacing-medium);
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .gallery::-webkit-scrollbar {
@@ -20,11 +20,12 @@
 
 .gallery__image-cell {
     scroll-snap-align: start;
+    margin-top: 2rem;
 }
 
 .gallery__image-element {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--border-radius-base);
+    border-radius: 0.5rem;
 }
