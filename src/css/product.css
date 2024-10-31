@@ -78,3 +78,10 @@ main {
     content: ">";
     right: 2.5rem;
 }
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow: auto;
+    }
+}

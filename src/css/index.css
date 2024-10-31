@@ -60,6 +60,7 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
+
     .hero__text {
         display: flex;
         flex-direction: column;
@@ -91,8 +92,11 @@ header {
   }
   
   @media screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
     .hero {
-        background-position: center 80%;
+        background-position: center 75%;
     }
 
     .hero__text {
@@ -100,7 +104,7 @@ header {
     }
   }
 
-  @media (max-height: 480px) and (orientation: landscape) {
+  @media screen and (max-height: 480px) and (orientation: landscape) {
     body {
         overflow: auto;
     }
