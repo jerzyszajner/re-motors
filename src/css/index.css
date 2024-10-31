@@ -47,15 +47,16 @@ header {
     align-self: left;
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--yellow-600);
-    color: var(--black);
+    background: none;
+    color: var(--white);
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s linear;
     text-align: center;
+    border: 2px solid var(--white);
 }
 .hero__button:hover {
-    background-color: #0056B3;
+    background-color: var(--blue-500);
     color: var(--white);
 }
 
@@ -96,7 +97,7 @@ header {
         overflow: auto;
     }
     .hero {
-        background-position: center 75%;
+        background-position: center 80%;
     }
 
     .hero__text {
