@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <title>Re Motors - Order</title>
 </head>
+
 <body>
     <header>
+        <!-- Navigation bar with logo and links -->
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src="./assets/icons/logo.png" alt="Main logo" class="navbar__logo-image" />
+                <img src="./assets/icons/porsche-logo.svg" alt="Main logo" class="navbar__logo-image" />
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__menu-item">
@@ -27,65 +32,66 @@
                     <a href="./order.html" class="navbar__link">Buy</a>
                 </li>
             </ul>
-        </nav>    
-        <div class="product__title">
-            <h1 class="product__title--header">EivReza Velocity</h1>
-            <p class="product__title--description">Comfort in Every Mile, Fun in Every Turn</p>
-        </div>
+        </nav>
+        <section class="product__title">
+            <h1 class="product__title--header">PORSCHE</h1>
+            <h2 class="product__title--description">Comfort in Every Mile, Fun in Every Turn</h2>
+        </section>
     </header>
     <main>
-        <div class="product__container">
-            <div class="Product__selection">
-                <p>Custimize your dream car</p>
+        <!-- Section for selecting and customizing the car's specifications -->
+        <section class="product__container">
+            <div class="product__selection">
+                <p class="product__selection-paragraph">Custimize your dream car</p>
                 <form class="product__selection-dropdown">
-                    <label for="dropdown1"></label>
-                    <select id="dropdown1">
-                        <option value="" disabled selected>Select type</option>
-                        <option value="item1">Item 1</option>
-                        <option value="item2">Item 2</option>
-                        <option value="item3">Item 3</option>
+                    <label for="dropdown1" class="product__label">Select type</label>
+                    <select id="dropdown1" name="type">
+                        <option value="" disabled>Select type</option>
+                        <option value="targa4gts">Porsche 911 Targa 4 GTS</option>
                     </select>
-                    <label for="dropdown2"></label>
-                    <select id="dropdown2">
-                        <option value="" disabled selected>Select engine</option>
-                        <option value="item1">Item 1</option>
-                        <option value="item2">Item 2</option>
-                        <option value="item3">Item 3</option>
+                    <label for="dropdown2" class="product__label">Select engine</label>
+                    <select id="dropdown2" name="engine">
+                        <option value="" disabled>Select engine</option>
+                        <option value="3l-flat-6-twin-turbo" selected>3.0L Twin-Turbocharged Flat-6 (480 HP)</option>
                     </select>
-                    <label for="dropdown3"></label>
-                    <select id="dropdown3">
-                        <option value="" disabled selected>Select transmission</option>
-                        <option value="item1">Item 1</option>
-                        <option value="item2">Item 2</option>
-                        <option value="item3">Item 3</option>
+                    <label for="dropdown3" class="product__label">Select transmission</label>
+                    <select id="dropdown3" name="transmission">
+                        <option value="" disabled>Select transmission</option>
+                        <option value="pdk">8-speed Porsche Doppelkupplung (PDK)</option>
+                        <option value="manual">7-speed Manual Transmission</option>
                     </select>
-                    <label for="dropdown4"></label>
-                    <select id="dropdown4">
-                        <option value="" disabled selected>Select color</option>
-                        <option value="item1">Item 1</option>
-                        <option value="item2">Item 2</option>
-                        <option value="item3">Item 3</option>
+                    <label for="dropdown4" class="product__label">Select color</label>
+                    <select id="dropdown4" name="color">
+                        <option value="" disabled>Select color</option>
+                        <option value="carmine-red">Carmine Red</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="gt-silver">GT Silver Metallic</option>
+                        <option value="night-blue">Night Blue Metallic</option>
                     </select>
-                    <label for="dropdown5"></label>
-                    <select id="dropdown5">
-                        <option value="" disabled selected>Select interior</option>
-                        <option value="item1">Item 1</option>
-                        <option value="item2">Item 2</option>
-                        <option value="item3">Item 3</option>
+                    <label for="dropdown5" class="product__label">Select interior</label>
+                    <select id="dropdown5" name="interior">
+                        <option value="" disabled>Select interior</option>
+                        <option value="leather-black" selected>Leather Interior in Black</option>
+                        <option value="leather-red-black">Leather Interior in Carmine Red/Black</option>
+                        <option value="leather-chalk">Leather Interior in Chalk</option>
                     </select>
-                    <br><br>
-                    <button type="button">Submit</button>
+                    <!-- Submit button opens a new tab with video:) -->
+                    <button type="submit" class="product__selection-button"
+                        onclick="window.open('https://player.vimeo.com/video/935779470?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1', '_blank', 'noopener,noreferrer')">
+                        Submit
+                    </button>
                 </form>
             </div>
-            <div class="Product__image">
-                <img src="./assets/images/car/bil-4.png" alt="">
+            <div class="product__image">
+                <img src="./assets/images/car/bil-4.jpeg" class="product__image-img" alt="Image of a car">
             </div>
-        </div>
+        </section>
     </main>
-            <!-- Page footer including the links and copyright  -->
-            <footer class="footer">
-                <p class="footer__paragraph">&copy; EivReza-Motors</p>
-                <p class="footer__paragraph">Rosenkranzgrate 20, 0160, Oslo</p>
-            </footer>
+    <!-- Footer copyright notice -->
+    <footer class="footer">
+        <p class="footer__paragraph">© Images property of Porsche, used for educational purposes only.</p>
+    </footer>
 </body>
+
 </html>

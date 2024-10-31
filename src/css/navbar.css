@@ -6,11 +6,9 @@
     position: sticky;
     top: 0;
     z-index: 9999;
-    padding: 2rem;
+    padding: 1rem;
+    padding-right: 2.5rem;
     background-color: var(--blue-500);
-}
-.navbar__logo-image {
-
 }
 
 .navbar__menu {
@@ -19,11 +17,31 @@
     list-style: none;
 }
 
-.navbar__menu-item {
-
-}
-
 .navbar__link {
     text-decoration: none;
     color: var(--white);
+    transition: color 0.3s linear;
+    font-size: 1.2rem;
+}
+
+.navbar__link:hover {
+    color: var(--yellow-600);
+}
+
+@media screen and (max-width: 480px) {
+    .navbar__menu {
+        display: flex;
+    }
+
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+    }
+
+    .navbar__menu {
+        flex-direction: row;
+        gap: 2rem;
+    }
 }

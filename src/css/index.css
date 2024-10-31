@@ -5,23 +5,24 @@ header {
 }
 
 .hero {
-    flex-grow: 1;
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 50px;
+    flex: 1;
+    position: relative;
+    background-size: contain;
+    background-position: center 80%;
     color: var(--white);
-    background-image:url('../assets/images/car/bil-1.png');
+    background-image:url('../assets/images/car/car-home-red.avif');
+    background-repeat: no-repeat;
+    background-color: black;
 }
 .hero__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.4;
-    width: 50%;
+    width: 30%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 .hero__title--large,
 .hero__subtitle--medium,
@@ -37,24 +38,77 @@ header {
 }
 .hero__price,
 .hero__description {
-    font-style: italic;
     font-size: 1em;
     margin-top: 1rem;
 }
 .hero__button {
     margin-top: 2rem;
-    width: 30%;
-    align-self: center;
+    width: 8rem;
+    align-self: left;
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgba(245, 180, 100, 0.80);
+    background-color: var(--yellow-600);
     color: var(--black);
     text-decoration: none;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: all 0.3s linear;
     text-align: center;
 }
-/* .hero__button:hover {
+.hero__button:hover {
     background-color: #0056B3;
-} 
-*/
+    color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+    .hero__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.4;
+        width: 50%;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .hero__title--large,
+    .hero__subtitle--medium,
+    .hero__price,
+    .hero__description {
+        text-align: left;
+    }
+    .hero__title--large {
+        font-size: 3em;
+    }
+    .hero__subtitle--medium {
+        font-size: 2em;
+    }
+    .hero__price,
+    .hero__description {
+        font-size: 1em;
+        margin-top: 1rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero {
+        background-position: center 80%;
+    }
+
+    .hero__text {
+        width: 80%;
+    }
+  }
+
+  @media (max-height: 480px) and (orientation: landscape) {
+    body {
+        overflow: auto;
+    }
+    .hero__text {
+        line-height: 1.3;
+        width: 90%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+  }

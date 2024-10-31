@@ -1,6 +1,4 @@
 :root {
-	/* --FONT- */
-	--font-family: 'Raleway', sans-serif;
 	/* --WHITE-- */
 	--white: #FDFDFD;
 	--gray: #EAEBEB;
@@ -24,8 +22,10 @@
 	--yellow-300: #F7C07D;
 	--yellow-400: #F5B464;
 	--yellow-500: #F3A13D;
-	--yellow-600: #DD9338;
+	--yellow-600: #D5A10E;
 	--yellow-700: #AD722B;
 	--yellow-800: #865922;
 	--yellow-900: #66441A;
+	/* --REDS-- */
+	--red-50: red;
 }

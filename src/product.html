@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/product.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>Re Motors - Product</title>
 </head>
+
 <body>
     <header>
+        <!-- Navigation bar with logo and links -->
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src="./assets/icons/logo.png" alt="Main logo" class="navbar__logo-image" />
+                <img src="./assets/icons/porsche-logo.svg" alt="Main logo" class="navbar__logo-image" />
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__menu-item">
@@ -28,31 +32,42 @@
                     <a href="./order.html" class="navbar__link">Buy</a>
                 </li>
             </ul>
-        </nav>    
+        </nav>
+        <section class="product">
+            <h1 class="product__heading">911 Targa 4 GTS</h1>
+        </section>
     </header>
- 
+
     <main>
+        <!-- Gallery section -->
         <section class="gallery">
             <figure class="gallery__image-cell">
-                <img src="./assets/images/car/bil-1.png" class="gallery__image-element"
-                    alt="Image of a coffee machine" />
+                <img src="./assets/images/car/bil-1.jpeg" class="gallery__image-element" alt="Image of a car" />
             </figure>
             <figure class="gallery__image-cell">
-                <img src="./assets/images/car/bil-2.png" class="gallery__image-element"
-                    alt="Image of a coffee machine" />
+                <img src="./assets/images/car/bil-2.jpeg" class="gallery__image-element" alt="Image of a car" />
             </figure>
             <figure class="gallery__image-cell">
-                <img src="./assets/images/car/bil-3.png" class="gallery__image-element"
-                    alt="Image of a coffee machine" />
+                <img src="./assets/images/car/bil-3.jpeg" class="gallery__image-element" alt="Image of a car" />
             </figure>
-
+            <figure class="gallery__image-cell">
+                <img src="./assets/images/car/bil-4.jpeg" class="gallery__image-element" alt="Image of a car" />
+            </figure>
+            <figure class="gallery__image-cell">
+                <img src="./assets/images/car/interior-1.jpeg" class="gallery__image-element"
+                    alt="Image of a car interior" />
+            </figure>
+            <figure class="gallery__image-cell">
+                <img src="./assets/images/car/interior-2.jpeg" class="gallery__image-element"
+                    alt="Image of a car interior" />
+            </figure>
         </section>
     </main>
 
-        <!-- Page footer including the links and copyright  -->
-        <footer class="footer">
-            <p class="footer__paragraph">&copy; EivReza-Motors</p>
-            <p class="footer__paragraph">Rosenkranzgrate 20, 0160, Oslo</p>
-        </footer>
+    <!-- Footer copyright notice -->
+    <footer class="footer">
+        <p class="footer__paragraph">© Images property of Porsche, used for educational purposes only.</p>
+    </footer>
 </body>
+
 </html>
